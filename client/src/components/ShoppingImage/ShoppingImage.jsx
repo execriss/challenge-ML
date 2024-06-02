@@ -2,7 +2,7 @@ import "./ShoppingImage.scss";
 
 const ShoppingIcon = () => {
   return (
-    <div className='iconContainer'>
+    <div className="iconContainer">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="-5 0 511 512"
@@ -17,4 +17,4 @@ const ShoppingIcon = () => {
   );
 };
 
-export default ShoppingIcon
+export default ShoppingIcon;

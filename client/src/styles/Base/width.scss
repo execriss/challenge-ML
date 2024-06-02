@@ -1,22 +1,22 @@
 [class*="meli-width-"],
-[class*="meli-child-width-"] > *{
-    box-sizing: border-box;
+[class*="meli-child-width-"] > * {
+  box-sizing: border-box;
 }
 
-.meli-child-width-1-1{
-    & > *{
-        width: 100%;
-    }
-}
-
-.meli-width-1-1{
+.meli-child-width-1-1 {
+  & > * {
     width: 100%;
+  }
 }
 
-.meli-width-auto{
-    width: auto;
+.meli-width-1-1 {
+  width: 100%;
 }
 
-.meli-width-expand{
-    flex: 1;
+.meli-width-auto {
+  width: auto;
+}
+
+.meli-width-expand {
+  flex: 1;
 }

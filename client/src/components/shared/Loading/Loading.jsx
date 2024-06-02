@@ -1,12 +1,11 @@
-import './Loading.scss'
+import "./Loading.scss";
 
 export const Loading = () => {
-    return (
-        <div className="loading-spinner">
-          <div className="spinner"></div>
-        </div>
-      );
+  return (
+    <div className="loading-spinner">
+      <div className="spinner"></div>
+    </div>
+  );
+};
 
-}
-
-export default Loading
+export default Loading;

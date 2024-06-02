@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 
 $item-details-padding: $global-margin-large;
 $item-details-margin: $global-margin-small;
@@ -13,78 +13,77 @@ $item-details-price-font-size: $global-font-size-46;
 $item-details-description-font-size: $global-font-size-28;
 $item-details-description-color: $grey-100;
 
-.meli-item-details{
-    border-radius: $item-details-radius;
-    padding: $item-details-padding;
-    background-color: #fff;
-    margin: $item-details-margin 0;
+.meli-item-details {
+  border-radius: $item-details-radius;
+  padding: $item-details-padding;
+  background-color: #fff;
+  margin: $item-details-margin 0;
 
-    .meli-grid{
-        margin-top: -$item-details-margin-large;
+  .meli-grid {
+    margin-top: -$item-details-margin-large;
 
-        & > *{
-            margin-top: $item-details-margin-large;
-        }
+    & > * {
+      margin-top: $item-details-margin-large;
+    }
+  }
+
+  .meli-column-picture {
+    width: 100%;
+
+    &,
+    img {
+      width: 100%;
     }
 
-    .meli-column-picture{
-        width: 100%;
-        
-        &, img{
-            width: 100%;
-        }
+    @include breakpoint(lg) {
+      &,
+      img {
+        width: $item-details-image-size;
+      }
 
-        @include breakpoint(lg){
-            
-            &, img{
-                width: $item-details-image-size;
-            }
-
-            img{
-                height: $item-details-image-size;
-                object-fit: contain;
-            }
-        }
-
-        
+      img {
+        height: $item-details-image-size;
+        object-fit: contain;
+      }
     }
+  }
 
-    .meli-column-details{
-        flex: 1;
+  .meli-column-details {
+    flex: 1;
+  }
+
+  .meli-conditions-and-sold-quantity {
+    font-size: $item-details-conditions-font-size;
+    line-height: 1;
+    color: $item-details-color;
+  }
+
+  h1 {
+    font-size: $item-details-title-font-size;
+    color: $item-details-color;
+    margin: $item-details-margin 0 $item-details-margin-large 0;
+  }
+
+  .meli-price {
+    font-size: $item-details-price-font-size;
+    color: $item-details-color;
+    margin-bottom: $item-details-margin-large;
+
+    sup {
+      font-size: $item-details-price-font-size * 0.4;
+      line-height: 1;
     }
+  }
 
-    .meli-conditions-and-sold-quantity{
-        font-size: $item-details-conditions-font-size;
-        line-height: 1;
-        color: $item-details-color;
+  .meli-description {
+    color: $item-details-description-color;
+    font-size: $item-details-margin;
+    overflow: hidden;
+
+    & > h2 {
+      font-size: $item-details-description-font-size;
+      color: $item-details-color;
+      margin: $item-details-margin-large 0;
     }
-
-    h1{
-        font-size: $item-details-title-font-size;
-        color: $item-details-color;
-        margin: $item-details-margin 0 $item-details-margin-large 0;
-    }
-
-    .meli-price{
-        font-size: $item-details-price-font-size;
-        color: $item-details-color;
-        margin-bottom: $item-details-margin-large;
-
-        sup{
-            font-size: $item-details-price-font-size * 0.4;
-            line-height: 1;
-        }
-    }
-
-    .meli-description{
-        color: $item-details-description-color;
-        font-size: $item-details-margin;
-        overflow: hidden;
-
-        & > h2{
-            font-size: $item-details-description-font-size;
-            color: $item-details-color;
-            margin: $item-details-margin-large 0;
-        }
-    }
+  }
 }

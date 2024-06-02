@@ -1,5 +1,5 @@
 const environment = {
-  APIBaseURL: 'http://localhost:3000'
-}
+  APIBaseURL: "http://localhost:3000",
+};
 
-export default environment
+export default environment;

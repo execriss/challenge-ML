@@ -1,42 +1,42 @@
-import { useState, useEffect } from 'react'
-import ApiFetchService from '../helpers/ApiFetchService'
+import { useState, useEffect } from "react";
+import ApiFetchService from "../helpers/ApiFetchService";
 
 export const useFetchResults = (search) => {
   const [state, setState] = useState({
     data: {},
-    loading: true
-  })
+    loading: true,
+  });
 
   useEffect(() => {
     (async () => {
-      const data = await ApiFetchService.getResults(search)
+      const data = await ApiFetchService.getResults(search);
 
       setState({
         data,
-        loading: false
-      })
-    })()
-  }, [search])
+        loading: false,
+      });
+    })();
+  }, [search]);
 
-  return state
-}
+  return state;
+};
 
 export const useFetchItemDetails = (id) => {
   const [state, setState] = useState({
     data: {},
-    loading: true
-  })
+    loading: true,
+  });
 
   useEffect(() => {
     (async () => {
-      const data = await ApiFetchService.getItemDetails(id)
+      const data = await ApiFetchService.getItemDetails(id);
 
       setState({
         data,
-        loading: false
-      })
-    })()
-  }, [id])
+        loading: false,
+      });
+    })();
+  }, [id]);
 
-  return state
-}
+  return state;
+};
