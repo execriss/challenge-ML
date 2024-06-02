@@ -1,0 +1,32 @@
+@import '../../styles/main.scss';
+
+.shoppingImage-container {
+    display: flex;
+    justify-content: center;
+    margin: $global-margin-small;
+    min-height: 60vh;
+
+    .shoppingImage-container-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        align-self: stretch;
+        width: 100%;
+        text-align: center;
+
+        svg {
+            max-width: 250px;
+        }
+
+        h2 {
+            margin: $global-margin-small;
+            color: $grey-150;
+        }
+
+        p {
+            color: $grey-100;
+            max-width: 70vw;
+        }
+    }
+}
