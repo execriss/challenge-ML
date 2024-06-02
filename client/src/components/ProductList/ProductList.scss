@@ -1,36 +1,42 @@
 @import "../../styles/main.scss";
 
+// Variables
 $results-list-padding: $global-margin-small;
 $results-list-radius: $global-radius;
 $results-list-border: 2px solid #f7f7f7;
 $results-list-background-color: #fff;
+$padding-large: 3rem;
 
+// Mixins
+@mixin center-content {
+  justify-content: center;
+  align-items: center;
+}
+
+// Estilos principales
 .meli-results-list {
   border-radius: $results-list-radius;
   padding: $results-list-padding;
   background-color: $results-list-background-color;
   margin: $results-list-padding 0;
 
-  & > .meli-grid {
-    & > div {
-      & + div {
-        margin-top: $results-list-padding;
+  .meli-grid {
+    > div + div {
+      margin-top: $results-list-padding;
 
-        & > * {
-          border-top: $results-list-border;
-          padding-top: $results-list-padding;
-        }
+      > * {
+        border-top: $results-list-border;
+        padding-top: $results-list-padding;
       }
     }
   }
 }
 
 .product-empty {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: $padding-large;
+  padding-bottom: $padding-large;
 }
 
 .center {
-  justify-content: center;
-  align-items: center;
+  @include center-content;
 }

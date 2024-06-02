@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import logo from "../../assets/images/Logo_ML.png";
 import "./SearchNavBar.scss";
 
 const SearchNavBar = () => {
@@ -24,7 +23,12 @@ const SearchNavBar = () => {
         <div className="meli-grid meli-flex-middle">
           <div className="meli-width-auto">
             <a className="meli-search-navbar-logo" href="/">
-              <img src={logo} alt="Mercadolibre" height="36" width="56" />
+              <img
+                src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.53-beta.0/mercadolibre/logo_large_25years_v2.png"
+                alt="Mercadolibre"
+                height="34"
+                width="134"
+              />
             </a>
           </div>
           <div className="meli-width-expand">
