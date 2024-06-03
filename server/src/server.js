@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import env from "./environments/environment.js";
-import ItemRoutes from "./core/features/routes/itemRoutes.js";
+import ItemRoutes from "./core/features/routes/ItemRoutes.js";
 import { errorMiddleware } from "./core/middlewares/ErrorMiddleware.js";
 
 export class Server {
