@@ -31,19 +31,29 @@
     .welcome-buttons-container {
       display: flex;
       column-gap: 5px;
+  
+      .btn-blue,
+      .btn-outline-blue {
+        width: 150px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+      }
+  
       .btn-blue {
         background: $green;
         border: none;
         color: $white;
-        border-radius: 5px;
-        cursor: pointer;
       }
+  
       .btn-outline-blue {
         background: none;
         border: none;
         outline: 1px solid $blue;
-        border-radius: 5px;
-        cursor: pointer;
       }
     }
   }

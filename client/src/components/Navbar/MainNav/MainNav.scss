@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   column-gap: 3px;
-  padding: $global-margin-small / 8 $global-margin-small / 3.2;
+  padding: calc($global-margin-small / 8) calc($global-margin-small / 3.2);
   border: 1px solid rgba(0, 0, 0, 0);
 
   &:hover {
@@ -37,7 +37,7 @@
 }
 
 .navbar-main-container {
-  padding-top: $global-margin-small / 5;
+  padding-top: calc($global-margin-small / 5);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +52,7 @@
   .navbar-buttons {
     align-self: flex-end;
     display: flex;
-    column-gap: $global-margin-small / 3;
+    column-gap: calc($global-margin-small / 3);
     padding-left: $global-margin-large + 18px;
 
     li {
@@ -63,7 +63,7 @@
       transition: 0.2s;
       cursor: pointer;
       list-style-type: none;
-      padding-left: $global-margin-small / 1.33;
+      padding-left: calc($global-margin-small / 1.33);
 
       &:hover {
         color: $grey-150;
@@ -94,7 +94,7 @@
 
     .cart-icon {
       font-size: $global-font-size-16;
-      padding-left: $global-margin-small / 1.6;
+      padding-left: calc($global-margin-small / 1.6);
       cursor: pointer;
     }
   }

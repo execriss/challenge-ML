@@ -27,8 +27,8 @@ export const ProductListItem = ({ data }) => {
           </div>
         </div>
 
-        <div>
-          <div className="mali-item-price-wrapper">
+        <div className="meli-item">
+          <div className="mali-item-price-wrapper no-border-padding">
             <div className="meli-item-price">
               {price}
               <sup>00</sup>
@@ -36,7 +36,7 @@ export const ProductListItem = ({ data }) => {
             </div>
             <div className="meli-item-condition">{condition}</div>
           </div>
-          <h2>
+          <h2 className="no-border-padding">
             <Link to={url}>{data.title}</Link>
           </h2>
         </div>

@@ -13,7 +13,6 @@ $padding-large: 3rem;
   align-items: center;
 }
 
-// Estilos principales
 .meli-results-list {
   border-radius: $results-list-radius;
   padding: $results-list-padding;
@@ -24,7 +23,7 @@ $padding-large: 3rem;
     > div + div {
       margin-top: $results-list-padding;
 
-      > * {
+      > *:not(.meli-item-price-wrapper):not(h2) {
         border-top: $results-list-border;
         padding-top: $results-list-padding;
       }
