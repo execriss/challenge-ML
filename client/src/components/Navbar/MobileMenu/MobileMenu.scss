@@ -1,0 +1,66 @@
+@import "@styles/main.scss";
+
+.welcome-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 18px 24px;
+  border-bottom: 1px solid $grey-50;
+  column-gap: 15px;
+
+  h3 {
+    font-size: $global-font-size-16;
+    color: $black;
+    margin: 0;
+  }
+
+  h4 {
+    margin: 0 0 15px 0;
+    font-size: $global-font-size-14;
+    color: rgba(0, 0, 0, 0.45);
+  }
+  .user-icon-mobile {
+    font-size: 40px;
+    color: $grey-100;
+    padding: 10px;
+    background-color: $grey-50;
+    border-radius: 50%;
+  }
+  .welcome-main {
+    width: 100%;
+    .welcome-buttons-container {
+      display: flex;
+      column-gap: 5px;
+      .btn-blue {
+        background: $green;
+        border: none;
+        color: $white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn-outline-blue {
+        background: none;
+        border: none;
+        outline: 1px solid $blue;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.burger-list {
+  ul {
+    list-style: none;
+    max-height: 190px;
+    padding: 0 25px 16px 25px;
+    border-bottom: 1px solid $grey-50;
+  }
+  li {
+    font-size: $global-font-size-14;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding: 13px 0;
+    cursor: pointer;
+  }
+}

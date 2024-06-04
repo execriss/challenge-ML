@@ -1,4 +1,3 @@
-import SearchNavBar from "../../components/SearchNavBar/SearchNavBar.jsx";
 import useSEO from "../../hooks/useSEO.jsx";
 import meli from "../../assets/images/meli.png";
 import ShoppingImage from "../../components/ShoppingImage/ShoppingImage.jsx";
@@ -17,11 +16,10 @@ const Home = () => {
   return (
     <>
       <main className="meli-page-home">
-        <SearchNavBar />
         <div className="shoppingImage-container">
           <div className="shoppingImage-container-item">
             <ShoppingImage />
-            <h2>¡Bienvenido Mercado Libre!</h2>
+            <h2>¡Bienvenido a Mercado Libre!</h2>
             <p>
               Nos alegra tenerte aquí. Para encontrar los productos que deseas,
               simplemente utiliza el buscador ubicado en la parte superior de la

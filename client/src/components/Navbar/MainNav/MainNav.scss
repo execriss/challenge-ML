@@ -1,0 +1,101 @@
+@import "@styles/main.scss";
+
+.shipping-address {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+  padding: $global-margin-small / 8 $global-margin-small / 3.2;
+  border: 1px solid rgba(0, 0, 0, 0);
+
+  &:hover {
+    border: 1px solid $yellow;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .address-icon {
+    font-size: 26px;
+    color: rgba(61, 60, 60, 0.384);
+    margin-bottom: 20px;
+  }
+
+  .container-address {
+    display: flex;
+    flex-direction: column;
+
+    .send-to {
+      font-size: 10px;
+      color: $grey-100;
+    }
+
+    .address {
+      font-size: $global-font-size-14;
+      color: $black;
+    }
+  }
+}
+
+.navbar-main-container {
+  padding-top: $global-margin-small / 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .navbar-shipping-and-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: $global-margin-large + 8px;
+  }
+
+  .navbar-buttons {
+    align-self: flex-end;
+    display: flex;
+    column-gap: $global-margin-small / 3;
+    padding-left: $global-margin-large + 18px;
+
+    li {
+      font-size: $global-font-size-14;
+      color: $black;
+      border: none;
+      background: transparent;
+      transition: 0.2s;
+      cursor: pointer;
+      list-style-type: none;
+      padding-left: $global-margin-small / 1.33;
+
+      &:hover {
+        color: $grey-150;
+      }
+    }
+
+    .arrow-categoriesBtn {
+      font-size: $global-font-size-16;
+      vertical-align: middle;
+    }
+
+    .container-tag-mplay {
+      position: relative;
+
+      span {
+        position: absolute;
+        left: 50%;
+        bottom: 85%;
+        transform: translate(-50%);
+        background-color: $green;
+        color: $white;
+        font-size: 8px;
+        border-radius: 20px;
+        padding: 0 2px;
+        font-weight: bold;
+      }
+    }
+
+    .cart-icon {
+      font-size: $global-font-size-16;
+      padding-left: $global-margin-small / 1.6;
+      cursor: pointer;
+    }
+  }
+}

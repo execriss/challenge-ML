@@ -1,5 +1,4 @@
 import { useLocation } from "react-router-dom";
-import SearchNavBar from "../../components/SearchNavBar/SearchNavBar.jsx";
 import ProductList from "../../components/ProductList/ProductList.jsx";
 import { useFetchResults } from "../../hooks/useFetch";
 import Breadcrumbs from "../../components/shared/Breadcrumb/Breadcrumb.jsx";
@@ -29,7 +28,6 @@ const Result = () => {
 
   return (
     <main className="meli-page-results">
-      <SearchNavBar />
       <div className={loadingClass}>
         <Breadcrumbs items={data.categories} />
         <ProductList search={searchQuery} items={data.items} />

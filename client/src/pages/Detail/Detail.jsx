@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import ProductDetail from "../../components/ProductDetail/ProductDetail";
-import SearchNavBar from "../../components/SearchNavBar/SearchNavBar";
 import Breadcrumbs from "../../components/shared/Breadcrumb/Breadcrumb";
 import { useFetchItemDetails } from "../../hooks/useFetch";
 import useSEO from "../../hooks/useSEO";
@@ -30,7 +29,6 @@ const Detail = () => {
   useSEO({ title, description, ogTitle, ogImage, ogDescription });
   return (
     <main className="meli-page-details">
-      <SearchNavBar />
       <div className={loadingClass}>
         <Breadcrumbs items={items} />
         <ProductDetail item={item} />

@@ -1,6 +1,7 @@
 import { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loading from "./components/shared/Loading/Loading";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   const HomeView = lazy(() => import("./pages/Home/Home"));
@@ -10,6 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <Suspense fallback={<Loading />}>
+        <Navbar />
         <Routes>
           <Route exact path="/" element={<HomeView />} />
           <Route path="/items/:id" element={<DetailView />} />

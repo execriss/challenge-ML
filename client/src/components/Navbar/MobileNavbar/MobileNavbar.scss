@@ -1,0 +1,36 @@
+@import "@styles/main.scss";
+
+.navbar-mobile-main-container {
+  height: 50px;
+  padding: 0 5px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $grey-50;
+  background-color: $yellow;
+  .mobile-top-icon {
+    font-size: $global-font-size-24;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+}
+
+.shipping-address-mobile {
+  height: 39px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $yellow;
+  border-bottom: 1px solid $grey-100;
+  padding: 5px 10px;
+  .address-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 5px;
+
+    p {
+      font-size: 13px;
+    }
+  }
+}
