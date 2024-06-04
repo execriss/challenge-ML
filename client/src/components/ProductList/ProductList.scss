@@ -23,7 +23,7 @@ $padding-large: 3rem;
     > div + div {
       margin-top: $results-list-padding;
 
-      > *:not(.meli-item-price-wrapper):not(h2) {
+      > * {
         border-top: $results-list-border;
         padding-top: $results-list-padding;
       }

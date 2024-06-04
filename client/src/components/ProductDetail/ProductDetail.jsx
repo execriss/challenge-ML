@@ -5,9 +5,11 @@ export const ProductDetail = ({ item }) => {
   if (!item) return <div></div>;
 
   const formatDescription = (description) => {
-    return description.split(/(\r\n|\n|\r)/gm).map((part, index) => 
-      part.match(/(\r\n|\n|\r)/) ? <br key={index} /> : part
-    );
+    return description
+      .split(/(\r\n|\n|\r)/gm)
+      .map((part, index) =>
+        part.match(/(\r\n|\n|\r)/) ? <br key={index} /> : part
+      );
   };
 
   return (
