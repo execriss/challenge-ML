@@ -14,7 +14,7 @@ const MobileNavbar = ({ burgerMenu, handleBurgerMenu }) => (
         <img
           src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.53-beta.0/mercadolibre/logo_large_25years_v2.png"
           alt="Logo de Mercado Libre"
-          width={44}
+          width={120}
         />
       </Link>
       <SearchInput mobile />
