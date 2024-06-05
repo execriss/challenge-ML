@@ -1,4 +1,4 @@
-# ![[MercadoLibre](https://http2.mlstatic.com/frontend-assets/ui-navigation/5.6.1/mercadolibre/logo__large_plus.png](https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.53-beta.0/mercadolibre/logo_large_25years_v2.png)) Desafío Frontend
+# ![[MercadoLibre](https://http2.mlstatic.com/frontend-assets/ui-navigation/5.6.1/mercadolibre/logo__large_plus.png](https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.53-beta.0/mercadolibre/logo_large_25years_v2.png) Desafío Frontend
 
 Este repositorio contiene el código fuente para el Desafío Frontend de MercadoLibre.
 
