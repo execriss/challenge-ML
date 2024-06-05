@@ -75,25 +75,25 @@ Además, la aplicación es totalmente navegable, ya que cada vista tiene su prop
 
 A continuación, se muestran algunas capturas de pantalla de la aplicación:
 
-![Caja de Búsqueda](screenshots/caja-busqueda.png)
+![Caja de Búsqueda](client/screenshots/caja-busqueda.png)
 *Figura 1: Caja de Búsqueda*
 
-![Resultados de Búsqueda](screenshots/listado-resultado.png)
+![Resultados de Búsqueda](client/screenshots/listado-resultado.png)
 *Figura 2: Resultados de Búsqueda*
 
-![Detalle del Producto](screenshots/detalle-producto.png)
+![Detalle del Producto](client/screenshots/detalle-producto.png)
 *Figura 3: Detalle del Producto*
 
 ## Responsive
 
-![Caja de Búsqueda](screenshots/responsive-search.png)
+![Caja de Búsqueda](client/screenshots/responsive-search.png)
 *Figura 1: Caja de Búsqueda*
 
-![Caja de Búsqueda](screenshots/responsive-menu.png)
+![Caja de Búsqueda](client/screenshots/responsive-menu.png)
 *Figura 2: Menú Hamburguesa*
 
-![Resultados de Búsqueda](screenshots/responsive-listado.png)
+![Resultados de Búsqueda](client/screenshots/responsive-listado.png)
 *Figura 3: Resultados de Búsqueda*
 
-![Detalle del Producto](screenshots/responsive-detalle.png)
+![Detalle del Producto](client/screenshots/responsive-detalle.png)
 *Figura 4: Detalle del Producto*
